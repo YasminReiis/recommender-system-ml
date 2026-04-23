@@ -1,7 +1,10 @@
-from fastapi import FastAPI
+import pandas as pd
+from model import Recommender
 
-app = FastAPI()
+df = pd.read_csv("data.csv")
 
-@app.get("/")
-def home():
-    return {"msg": "API funcionando"}
+model = Recommender()
+model.train(df)
+
+print("Sistema rodando!")
+print(model.recommend(1))

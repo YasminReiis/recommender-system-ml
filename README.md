@@ -1,11 +1,11 @@
-# Sistema de Recomendação ML
+# ML Recommendation System
 
-Projeto simples feito só no GitHub.
+Simple project built only on GitHub.
 
-## O que faz
-- Simula recomendações por usuário
+## What it does
+- Simulates recommendations per user
 
-## Arquivos
+## Files
 - main.py
 - model.py
 - data.csv
